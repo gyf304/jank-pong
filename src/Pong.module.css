@@ -1,0 +1,74 @@
+.pongApp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.arena {
+    --margin: 10%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: var(--margin);
+    right: var(--margin);
+    font-size: 16px;
+}
+
+.paddleL {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1em;
+    height: 5em;
+    background-color: white;
+    transform: translate(-150%, -50%);
+}
+
+.paddleR {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1em;
+    height: 5em;
+    background-color: white;
+    transform: translate(150%, -50%);
+}
+
+.scoreL {
+    margin: 1em;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.scoreR {
+    margin: 1em;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.centerLine {
+    position: absolute;
+    background-image: linear-gradient(black 25%, white 25%, white 75%, black 75%);
+    background-size: 100% calc(100% / 20);
+    width: 0.3em;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.ball {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    background-color: white;
+    transform: translate(-50%, -50%);
+}
